@@ -16,20 +16,22 @@
                    <li><a href="about.html">О Компании</a></li>
                 </ul>
                 <ul class="user-navigation">
-                    <li class="search-link"><h2>Поиск</h2>
+                    <li class="search-link"><a href="#"><h2 class="visually-hidden">Поиск</h2></a>
                         <div class="search-hover">
-                            <!-- Здесь будет форма -->
-                          </div>
+                            <label> 
+                                <input type="search" name="search" placeholder="Что ищем?">
+                            </label>
+                        </div>
                     </li>
-                    <li class="signIn-link"><h2>Вход</h2>
+                    <li class="signin"><a href="#"><h2>Вход</h2></a>
                         <div class="signin-hover">
                             <!-- Здесь будет форма -->
                             <a href="#">Забыли пароль?</a>
                             <a href="#">Новая регистрация</a>
                         </div> 
                     </li>
-                        <li class="basket-link"><h2 class="basket">Корзина</h2>
-                            <div class="shopping-basket-hover" >
+                        <li class="basket-link"><h2 class="cart-title visually-hidden">Корзина</h2>
+                            <div class="shopping-cart-form" >
                                 <table>
                                     <tr>
                                          <td><span class="basket-delite">x</span></td>
@@ -40,7 +42,7 @@
                                      </tr>
                                 </table>
                                 <p>Итого:<span>0</span>р </p>
-                                <a href="#">Оформить заказ</a>
+                                <button type="submit">Оформить заказ</button>
                             </div>
                          </li>
                  </ul>
