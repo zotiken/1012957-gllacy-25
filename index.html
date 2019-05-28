@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body >
@@ -26,13 +27,13 @@
         </ul>
         <ul class="user-navigation">
           <li class="search-link"><a class="search-icon" href="#">Поиск</a>
-            <div class="search-hover visually-hidden">
+            <div class="search-form">
               <label for="search">поиск</label>
                 <input type="search" name="search" id="search" placeholder="Что ищем?">
             </div>
           </li>
           <li class="signin"><a href="#">Вход</a>
-            <div class="signin-hover visually-hidden">
+            <div class="signin-form">
               <form class="signin-user" action="https://echo.htmlacademy.ru" method="POST">
                 <p>
                   <label class="visually-hidden" for="user-email">Электронная почта</label>
@@ -49,8 +50,8 @@
               </form>
             </div> 
           </li>
-          <li class="basket-link"><a href="#"><span class="goods-in-cart">пусто</span></a> 
-            <div class="shopping-cart-hover visually-hidden" >
+          <li class="cart-link"><a href="#"><span class="goods-in-cart">пусто</span></a> 
+            <div class="shopping-cart-form" >
               <table>
                 <tr>
                   <td><span class="basket-delite">x</span></td>
@@ -114,25 +115,7 @@
           <div class="describe-adress">
             <p>Адрес главного офиса и офлайн магазина <strong>ул. Большая Конюшевская 19/8, Санкт-Петербург</strong></p>
             <p>Для заказов по телефону:<br> <strong> 8 812 450-25-25 </strong><br>(c 10 до 20 ежедневно) </p>
-            <a href="#" >Форма обратной связи</a> 
-            <div class="visually-hidden">
-              <h2>Мы обязательно вам ответим!</h2>
-              <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
-                <p>
-                  <label class="visually-hidden" for="users-name">Как Вас зовут?</label>
-                  <input type="text" name="name" id="users-name"  placeholder="Как Вас зовут?">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="users-email">Ваша почта для ответа?</label>
-                  <input type="email" name="email" id="users-email" required placeholder="Ваша почта для ответа?">
-                </p>
-              <textarea  rows="10" placeholder="Напишите что нибудь..."></textarea>
-              <p>
-                <button type="submit">Отправить</button>
-              </p> 
-            </form> 
-            </div>
-            
+            <a href="#" >Форма обратной связи</a>
           </div>
        </section>
     </main>
@@ -155,6 +138,24 @@
        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="114" height="42" alt="HTML Academy"></a><br>
         <b>Сделано в HTML Academy © 2019</b>
       </p>
-   </footer>   
+   </footer> 
+   <div class="modal feedback-form visually-hidden">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
+      <p>
+        <label class="visually-hidden" for="users-name">Как Вас зовут?</label>
+        <input type="text" name="name" id="users-name"  placeholder="Как Вас зовут?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="users-email">Ваша почта для ответа?</label>
+        <input type="email" name="email" id="users-email" required placeholder="Ваша почта для ответа?">
+      </p>
+    <textarea  rows="10" placeholder="Напишите что нибудь..."></textarea>
+    <p>
+      <button type="submit">Отправить</button>
+    </p> 
+  </form> 
+  </div>
+    
   </body>
 </html>

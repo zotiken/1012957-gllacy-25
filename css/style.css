@@ -1,9 +1,9 @@
-body{
+body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 
-background-color:#9bafa4;
+background-color: #9bafa4;
 font-family: Roboto,'Helvetica Neue', sans-serif;
 color: #fff;
 }
@@ -13,17 +13,17 @@ a {
     color: #fff; 
 }
  
-li{ list-style: none;
+li { list-style: none;
 }
 
-.visually-hidden{
+.visually-hidden {
     display: none;
 }
-.site-navigation a, .user-navigation a{
+.site-navigation a, .user-navigation a {
    height: 32px;
    padding: 0 10px ;
 }
-.site-navigation a:hover{
+.site-navigation a:hover {
     
     background-color: #fff;
     color: #323232;
@@ -31,109 +31,122 @@ li{ list-style: none;
     transition: 0.3s ;
     
 }
-.site-navigation a:active{
+.site-navigation a:active {
     border-radius: 10px;
     background-color: #fff;
     color: #323232;
     box-shadow: inset 0px 1px 3px  black;
 }
-.site-navigation  a{
+.site-navigation  a {
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0px 10px  0 -9px rgba(255, 255, 255, 0.3);
 }
-.navigation-item.select{
+.navigation-item-active {
     background-color: #d07058;
 }
-.catalog-list{
+.catalog-list {
     display: none;
 }
-.catalog-list a{
+.catalog-list a {
     font-weight: normal;
     font-size: 14px;
     color: #323232;
-}
-.search-icon{
-    font-size:14px;
-}
-
-.search-hover label {
+ }
+.search-icon {
+    font-size: 14px;
+ }
+.search-form {
+    display: none;
+ }
+.search-link:hover .search-form {
+    display: block;
+ }
+.search-form label {
     font-size: 0;
 }
-
-.signin a, span{
+.signin-form {
+    display: none;
+ }
+.signin:hover .signin-form {
+    display: block;
+ }
+.signin a, span {
     font-size: 14px;
 }
-.signin a:hover{
+.signin a:hover {
     font-size: 14px;
     font-weight: bold;
     color: #323232;
 }
-.basket-link span{
-
+.shopping-cart-form {
+    display: none;
 }
-.contact-telefon{
+.cart-link:hover .shopping-cart-form {
+    display: block;
+  }
+.contact-telefon {
     font-size: 22px;
     font-weight: bold;
 }
-.main-navigation p:last-child{
+.main-navigation p:last-child {
     font-size: 14px;
 }
-.features{
-    background: url("/img/bgd.png") no-repeat top/cover;
+.features {
+    background: url("../img/bgd.png") no-repeat top/cover;
 }
-.features b{
+.features b {
     font-size: 24px;
-    color:#323232;
+    color: #323232;
 }
-.features p{
+.features p {
     font-size: 16px;
-    color:#323232;
+    color: #323232;
 }
 .blog{
-    background: url("/img/Клубничный фон.png") no-repeat top/cover;
-    color:#323232;
+    background: url("../img/strawberry-background.png") no-repeat top/cover;
+    color: #323232;
 }
-.blog a{
+.blog a {
     font-weight: normal;
     font-size: 24px;
     text-decoration-line: underline;
-    color: #323232; 
+    color:  #323232; 
 }
-.subscription{
+.subscription {
     background-color:#f8f7f4 ;
     border: 5px solid red;
-    border-image: url("/img/Почтовый-фон.png") repeat;
-    color:#323232;
+    border-image: url("../img/post-background.png") repeat;
+    color: #323232;
 }
-.subscription p{
+.subscription p {
     font-size: 16px;
 }
-.subscription label{
-    color:#999;
+.subscription label {
+    color: #999;
 }
-.describe-adress p{
+.describe-adress p {
     color:#323232;
     font-size: 14px;
 }
-.describe-adress strong{
-    color:#323232;
+.describe-adress strong {
+    color: #323232;
     font-size: 18px;
 }
 
 .footer-copyright, .footer-menu a{
     font-size: 12px;
 }
-.page-title{
+.page-title {
     font-size: 32px;
     font-weight: bold; 
 }
-.breadcrumbs a{
+.breadcrumbs a {
     font-size: 16px;
     box-shadow: 0px 10px  0 -9px rgba(255, 255, 255, 0.3);
 }
-.pagination-item-current a{
-    color:#323232;
+.pagination-item-current a {
+    color: #323232;
 }
 
 

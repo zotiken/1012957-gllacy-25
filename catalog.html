@@ -3,37 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">       
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
      </head>
     <body style="background-color:#9bafa4">
         <header class="main-header">
             <nav class="main-navigation">
                 <a href="index.html">
-                    <img src="img/main-Logo.svg" width="154" height="64" alt="Логотип Магазина мороженного «Глейси»">
+                    <img src="/img/main-Logo.svg" width="154" height="64" alt="Логотип Магазина мороженного «Глейси»">
                 </a>
                 <ul class="site-navigation">
-                   <li><a class="navigation-item select" href="catalog.html">Каталог</a></li>
+                   <li><a class="navigation-item navigation-item-active" href="catalog.html">Каталог</a></li>
                    <li><a href="delivery.html">Доставка и оплата</a></li>
                    <li><a href="about.html">О Компании</a></li>
                 </ul>
                 <ul class="user-navigation">
                     <li class="search-link"><a href="#"><h2 class="visually-hidden">Поиск</h2></a>
-                        <div class="search-hover visually-hidden">
+                        <div class="search-form">
                             <label> 
                                 <input type="search" name="search" placeholder="Что ищем?">
                             </label>
                         </div>
                     </li>
                     <li class="signin"><a href="#">Вход</a>
-                        <div class="signin-hover visually-hidden">
+                        <div class="signin-form">
                             <!-- Здесь будет форма -->
                             <a href="#">Забыли пароль?</a>
                             <a href="#">Новая регистрация</a>
                         </div> 
                     </li>
-                        <li class="basket-link"><h2 class="cart-title visually-hidden">Корзина</h2>
-                            <div class="shopping-cart-form visually-hidden">
+                        <li class="cart-link"><h2 class="cart-title visually-hidden">Корзина</h2>
+                            <div class="shopping-cart-form">
                                 <table>
                                     <tr>
                                          <td><span class="basket-delite">x</span></td>
