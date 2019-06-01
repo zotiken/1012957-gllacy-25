@@ -7,58 +7,74 @@
         <link rel="stylesheet" href="/css/style.css">       
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
      </head>
-    <body style="background-color:#9bafa4">
-        <header class="main-header">
-            <nav class="main-navigation">
-                <a href="index.html">
-                    <img src="/img/main-Logo.svg" width="154" height="64" alt="Логотип Магазина мороженного «Глейси»">
-                </a>
-                <ul class="site-navigation">
-                   <li><a class="navigation-item navigation-item-active" href="catalog.html">Каталог</a></li>
-                   <li><a href="delivery.html">Доставка и оплата</a></li>
-                   <li><a href="about.html">О Компании</a></li>
-                </ul>
-                <ul class="user-navigation">
-                    <li class="search-link"><a href="#"><h2 class="visually-hidden">Поиск</h2></a>
-                        <div class="search-form">
-                            <label> 
-                                <input type="search" name="search" placeholder="Что ищем?">
-                            </label>
-                        </div>
-                    </li>
-                    <li class="signin"><a href="#">Вход</a>
-                        <div class="signin-form">
-                            <!-- Здесь будет форма -->
-                            <a href="#">Забыли пароль?</a>
-                            <a href="#">Новая регистрация</a>
-                        </div> 
-                    </li>
-                        <li class="cart-link"><h2 class="cart-title visually-hidden">Корзина</h2>
-                            <div class="shopping-cart-form">
-                                <table>
-                                    <tr>
-                                         <td><span class="basket-delite">x</span></td>
-                                         <td><span class="basket-item">товар</span></td>
-                                         <td><span class="basket-item-x">0</span><span>кг</span></td>
-                                         <td><span class="basket-item-cost">0</span><span>р</span></td>
-                                         <td><span class="basket-item-sum">0</span><span>р</span></td>
-                                     </tr>
-                                </table>
-                                <p>Итого:<span>0</span>р </p>
-                                <button type="submit">Оформить заказ</button>
-                            </div>
-                         </li>
-                 </ul>
-                <p>С 10 до 20, ежедневно<br> <a class="contact-telefon" href="#">8 812 450-25-25</a></p>
-             </nav>
-         </header>         
+    <body>
+            <header class="main-header">
+                    <nav class="main-navigation catalog">
+                      <img src="img/main-logo.svg" width="154" height="64" alt="Логотип Магазина мороженного «Глейси»">
+                      <ul class="site-navigation">
+                        <li>
+                          <a class="navigation-item navigation-item-active" href="catalog.html">Каталог</a>
+                            <ul class="navigation-catalog-list">
+                              <li><a href="#"><b>Новинки</b></a> </li>
+                              <li><a href="#">Сливочное</a> </li>
+                              <li><a href="#">Щербеты</a></li>
+                              <li><a href="#">Фруктовый лед</a></li>
+                              <li><a href="#">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="navigation-item" href="delivery.html">Доставка и оплата</a></li>
+                        <li><a class="navigation-item" href="about.html">О Компании</a></li>
+                      </ul>
+                      <ul class="user-navigation">
+                        <li class="search-link"><a class="search-icon" href="#">Поиск</a>
+                          <div class="search-form">
+                            <label for="search">поиск</label>
+                              <input type="search" name="search" id="search" placeholder="Что ищем?">
+                          </div>
+                        </li>
+                        <li class="signin"><a href="#">Вход</a>
+                          <div class="signin-form">
+                            <form class="signin-user" action="https://echo.htmlacademy.ru" method="POST">
+                                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                                <input type="email" name="email" id="user-email" autocomplete="on" placeholder="Электронная почта">
+                                <label class="visually-hidden" for="user-password">Пароль</label>
+                                <input type="password" id="user-password" name="password" placeholder="Пароль">
+                              <div>
+                                <button class="button" type="submit"> Войти</button>
+                                    <a class="restore" href="#">Забыли пароль?</a>
+                                    <a class="registration" href="#">Новая регистрация</a>
+                              </div>
+                            </form>
+                          </div> 
+                        </li>
+                        <li class="cart-link"><a href="#"><span class="goods-in-cart">пусто</span></a> 
+                          <div class="shopping-cart-form" >
+                            <table>
+                              <tr>
+                                <td><span class="basket-delite">x</span></td>
+                                <td><span class="basket-item">товар</span></td>
+                                <td><span class="basket-item-x">0</span><span>кг</span></td>
+                                <td><span class="basket-item-cost">0</span><span>р</span></td>
+                                <td><span class="basket-item-sum">0</span><span>р</span></td>
+                              </tr>
+                            </table>
+                            <p>Итого:<span>0</span>р </p>
+                              <a href="#">Оформить заказ</a>
+                          </div>
+                        </li>
+                      </ul>
+                      <p>С 10 до 20, ежедневно<br> <a class="contact-telefon" href="#">8 812 450-25-25</a></p>
+                    </nav>
+                  </header>         
         <main class="container">
-           <h1 class="page-title">Сливочное мороженное</h1>
+         <div class="wrapper">
              <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li class="breadcrumbs-current">Сливочное</li>
             </ul>
+            <h1 class="page-title">Сливочное мороженное</h1>
+
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <!-- Здесь будет форма -->
@@ -72,7 +88,7 @@
                         </h3>
                         <p class="catalog-item-image">
                             <a href="catalog-item.html">
-                                <img src="img/acecream-icon-1.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                                <img src="/img/acecream-icon-1.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                              </a>
                         </p>
                         <p class="catalog-item-price">
@@ -85,7 +101,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-2.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-2.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -98,7 +114,7 @@
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-3.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-3.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         </a>
                     </p>
                     <p class="catalog-item-price">
@@ -111,7 +127,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-4.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-4.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         </a>
                      </p>
                     <p class="catalog-item-price">
@@ -124,7 +140,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-5.jpg" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-5.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         </a>
                      </p>
                     <p class="catalog-item-price">
@@ -137,12 +153,11 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-6.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-6.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         </a>
                      </p>
                     <p class="catalog-item-price">
                         <b>410₽/кг</b>
-                        <a class="button" href="#">Купить</a>
                      </p>
                             </li>
                 <li class="catalog-item">
@@ -151,7 +166,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-7.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-7.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -164,7 +179,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-8.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-8.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -177,7 +192,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-9.jpg" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-9.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -190,7 +205,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-10.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-10.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -203,7 +218,7 @@
                      </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item.html">
-                            <img src="img/acecream-icon-11.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/acecream-icon-11.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                          </a>
                      </p>
                     <p class="catalog-item-price">
@@ -216,7 +231,7 @@
                          </h3>
                         <p class="catalog-item-image">
                             <a href="catalog-item.html">
-                                <img src="img/acecream-icon-12.png" width="220" height="220" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                                <img src="img/acecream-icon-12.png"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                              </a>
                          </p>
                         <p class="catalog-item-price">
@@ -232,27 +247,31 @@
                     <li class="pagination-item"><a href="#">5</a></li>
                     <li class="pagination-item"><a href="#">next</a></li>
                 </ul>
-            </section>     
+            </section>  
+            </div>   
         </main>
         <footer class="main-footer">
-            <div class="footer-social">
-              <ul>
-                  <li><a class="social-button" href="#">твиттер</a></li>
-                  <li><a class="social-button" href="#">Инстаграм</a></li>
-                  <li><a class="social-button" href="#">Фейсбук</a></li>
-                  <li><a class="social-button" href="#">Вконтакте</a></li>
-              </ul>
-            </div>
-            <ul class="footer-menu">
-                <li><a href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве </a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
-              </ul>
-            <p class="footer-copyright">
-                <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="114" height="42" alt="HTML Academy"></a><br>
-                <b>Сделано в HTML Academy © 2019</b>
-             </p>
-         </footer>
+                <div class="wrapper">
+                  <div class="footer-container">
+                    <ul class="footer-social">
+                      <li><a class="social-button" href="#">Твиттер</a></li>
+                      <li><a class="social-button" href="#">Инстаграм</a></li>
+                      <li><a class="social-button" href="#">Фейсбук</a></li>
+                      <li><a class="social-button" href="#">Вконтакте</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                      <div><li><a href="#">Для поставщиков</a></li>
+                        <li><a href="#">О производстве </a></li></div>
+                      <div><li><a href="#">Наши документы</a></li>
+                        <li><a href="#">Экологические стандарты</a></li></div>
+                      
+                    </ul>
+                  <p class="footer-copyright">
+                    <a class="logo-link" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="114" height="42" alt="HTML Academy"></a><br>
+                      <b>Сделано в HTML Academy © 2019</b>
+                    </p>
+                  </div>
+                </div>  
+               </footer> 
   </body>
 </html>
