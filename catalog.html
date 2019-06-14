@@ -67,7 +67,7 @@
                         <td>
                             <img src="img/acecream-icon-1.png" width="33" height="33" alt="">
                             <span class="basket-item">Пломбир с апельсиновым джемом</span></td>
-                        <td><span class="basket-item-x">1,5</span><span>кг</span></td>
+                        <td><span class="basket-item-x">1.5</span><span>кг</span></td>
                         <td><span class="basket-item-cost">200</span><span>руб.</span></td>
                         <td><span class="basket-item-sum">300</span><span>руб.</span></td>
                         </tr>
@@ -101,7 +101,57 @@
 
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!-- Здесь будет форма -->
+                <form action="get">
+                        <label class="filter-sorting">
+                                <span class="filter-title">Сортировка:</span>
+                                <select class="sort-select filter-item-style" name="filter-sorting" >
+                                  <option value="popular">по популярности</option>
+                                  <option value="fat">по жирности</option>
+                                </select>
+                              </label>
+                              <label class="filter-coast">
+                                    <span class="filter-title">Цена: 100 руб. – 500 руб.</span>
+                                    <div class="coast-controls filter-item-style">
+                                        <div class="range-line"></div>
+                                        <div class="range-toggle range-toggle-min"></div>
+                                        <div class="range-toggle range-toggle-max"></div>
+                                        <div class="range-line-current"></div>
+                                    </div>
+                                  </label>
+                                  <div class="filter-fat-content">
+                                    <span class="filter-title">
+                                      Жирность:
+                                    </span>
+                                    <div class="fat-controls filter-item-style">
+                                      <input type="radio" name="fat" id="zero">
+                                      <label for="zero">0%</label>
+                                      <input type="radio" name="fat" id="to_10" checked>
+                                      <label for="to_10">до 10%</label>
+                                      <input type="radio" name="fat" id="to_30">
+                                      <label for="to_30">до 30%</label>
+                                      <input type="radio" name="fat" id="over_30">
+                                      <label for="over_30">выше 30%</label>
+                                    </div>
+                                  </div>
+                                  <div class="filter-filling">
+                                    <span class="filter-title">
+                                      Наполнители:
+                                    </span>
+                                    <div class="filling-controls filter-item-style">
+                                      <input type="checkbox" name="chocolate" id="chocolate" checked="">
+                                      <label for="chocolate">шоколадные</label>
+                                      <input type="checkbox" name="sugar" id="sugar" checked="">
+                                      <label for="sugar">сахарные присыпки</label>
+                                      <input type="checkbox" name="fruit" id="fruit">
+                                      <label for="fruit">фрукты</label>
+                                      <input type="checkbox" name="syrop" id="syrop">
+                                      <label for="syrop">сиропы</label>
+                                      <input type="checkbox" name="jam" id="jam">
+                                      <label for="jam">джемы</label>
+                                    </div>
+                                  </div>
+                                  <button class="button filter-button" type="submit">Применить</button>
+                </form>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог мороженного</h2>

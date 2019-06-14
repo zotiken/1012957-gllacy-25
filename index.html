@@ -225,7 +225,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="mailing" >Электронная почта</label>
-            <input type="email" name="email" id="mailing" placeholder="Электронная почта">
+            <input type="email" name="email" id="mailing" required placeholder="Электронная почта">
             <button class="button" type="submit">Отправить</button>
           </form>
          </div>
@@ -238,7 +238,7 @@
             <div class="describe-adress">
               <p>Адрес главного офиса <br> и офлайн магазина <br> <strong>ул. Большая Конюшевская 19/8, Санкт-Петербург</strong></p>
               <p>Для заказов по телефону:<br> <strong> 8 812 450-25-25 </strong><br>(c 10 до 20 ежедневно) </p>
-              <a class="button" href="#" >Форма обратной связи</a>
+              <a class="button form-feedback-link" href="#" >Форма обратной связи</a>
             </div>
           </div>  
        </section>
@@ -340,23 +340,25 @@
       </div>
     </div>  
    </footer> 
-   <div class="modal feedback-form visually-hidden">
+   <section class="feedback-form">
     <h2>Мы обязательно вам ответим!</h2>
     <form class="feedback" action="https://echo.htmlacademy.ru" method="GET">
       <p>
         <label class="visually-hidden" for="users-name">Как Вас зовут?</label>
-        <input type="text" name="name" id="users-name"  placeholder="Как Вас зовут?">
+        <input type="text" name="name" id="users-name" required placeholder="Как Вас зовут?">
       </p>
       <p>
         <label class="visually-hidden" for="users-email">Ваша почта для ответа?</label>
         <input type="email" name="email" id="users-email" required placeholder="Ваша почта для ответа?">
       </p>
-    <textarea  rows="10" placeholder="Напишите что нибудь..."></textarea>
+    <textarea cols="55" rows="8"  placeholder="Напишите что нибудь..."></textarea>
     <p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </p> 
+    <button class="modal-closed" type="button" ></button>
   </form> 
-  </div>
+  </section>
+  <div class="modal-overlay"></div>
   <script type="text/javascript" src="js/script.js"></script> 
   </body>
 </html>
