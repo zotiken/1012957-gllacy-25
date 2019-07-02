@@ -1,5 +1,3 @@
-// "use strict"
-
 // -----------slider-----------------
 
 var rad = document.querySelectorAll('.slider-toggle');
